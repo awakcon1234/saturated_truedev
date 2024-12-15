@@ -21,12 +21,15 @@
       "sound": "minecraft:ambient.nether_wastes.additions",
       "tick_chance": 0.0111
     },
-    "music": {
-      "sound": "minecraft:music.overworld.cherry_grove",
-      "min_delay": 12000,
-      "max_delay": 24000,
-      "replace_current_music": false
-    },
+    "music": [{
+      "data": {
+        "sound": "minecraft:music.overworld.cherry_grove",
+        "min_delay": 12000,
+        "max_delay": 24000,
+        "replace_current_music": false
+      },
+      "weight": 1
+    }],
     "particle": {
       "options": {
         "type": "minecraft:bubble_pop"
@@ -85,13 +88,11 @@
     ]
   },
   "spawn_costs": {},
-  "carvers": {
-    "air": [
+  "carvers": [
       "minecraft:cave",
       "minecraft:cave_extra_underground",
       "minecraft:canyon"
-    ]
-  },
+    ],
   "features": [
     [
       "minecraft:warm_ocean_vegetation",
